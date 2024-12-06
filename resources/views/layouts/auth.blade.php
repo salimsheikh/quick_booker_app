@@ -7,14 +7,12 @@
     <title>Corona Admin</title>
     <!-- plugins:css -->
     @vite([
-        'resources/assets/vendors/mdi/css/materialdesignicons.min.css',
-        'resources/assets/vendors/mdi/css/materialdesignicons.min.css.map',
+        'resources/assets/vendors/mdi/css/materialdesignicons.min.css',        
         'resources/assets/vendors/css/vendor.bundle.base.css',
         'resources/assets/css/style.css',
-        'resources/assets/images/favicon.png',
     ])
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="resources/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/assets/images/favicon.png') }}" />
   </head>
   <body>
     <div class="container-scroller">
@@ -221,52 +219,8 @@
                   <p class="p-3 mb-0 text-center">See all projects</p>
                 </div>
               </li>
-              <li class="nav-item nav-settings d-none d-lg-block">
-                <a class="nav-link" href="#">
-                  <i class="mdi mdi-view-grid"></i>
-                </a>
-              </li>
-              <li class="nav-item dropdown border-left">
-                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                  <i class="mdi mdi-email"></i>
-                  <span class="count bg-success"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                  <h6 class="p-3 mb-0">Messages</h6>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="{{ Vite::asset('resources/assets/images/faces/face4.jpg') }}" alt="image" class="rounded-circle profile-pic">
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
-                      <p class="text-muted mb-0"> 1 Minutes ago </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="{{ Vite::asset('resources/assets/images/faces/face2.jpg') }}" alt="image" class="rounded-circle profile-pic">
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
-                      <p class="text-muted mb-0"> 15 Minutes ago </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="{{ Vite::asset('resources/assets/images/faces/face3.jpg') }}" alt="image" class="rounded-circle profile-pic">
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
-                      <p class="text-muted mb-0"> 18 Minutes ago </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">4 new messages</p>
-                </div>
-              </li>
+              
+            
               <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
                   <i class="mdi mdi-bell"></i>
@@ -364,7 +318,7 @@
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Salim Shaikh</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
@@ -374,6 +328,9 @@
       </div>
       <!-- page-body-wrapper ends -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+
     @vite([
       'resources/assets/vendors/js/vendor.bundle.base.js',
       'resources/assets/js/off-canvas.js',
